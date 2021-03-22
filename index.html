@@ -15,9 +15,9 @@
 			$.ajax({
 			url: "API.php",
 			data: "",
-			dataType: "TXT",
+			dataType: "JSON",
 			error: function(xhr,thrownError){
-				alert("Could not load PHP");
+				alert(thrownError);
 			},
 			method: "POST",
 			success: function(result){
