@@ -17,7 +17,7 @@
 			data: "",
 			dataType: "JSON",
 			error: function(xhr,thrownError){
-				alert(thrownError);
+				alert(xhr.status);
 			},
 			method: "POST",
 			success: function(result){
